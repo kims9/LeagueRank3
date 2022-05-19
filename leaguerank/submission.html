@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your League of Legends Rank Is</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src = main.js ></script>
+  </head>
+  <body>
+    <section class="overlay">
+        <h1>Your League Of Legends Rank Is</h1>
+        <ul class="inline">
+          <div id = "icons">
+            <img id="rankIcon" src = "" width="300" height="300">
+          </div>
+      </ul>
+        <h1 id = "holders"></h1>
+        <p>Looking to climb? Check out this video!</p>
+        <iframe id="rankVideo" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <script>
+          var hold = getPlacement();
+          document.getElementById("holders").innerHTML = hold;
+        </script>
+        <a href="index.html">Go back</a>
+    </section>
+  </body>
+  <body>
+  </body>
+</html>

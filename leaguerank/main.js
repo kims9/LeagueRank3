@@ -58,35 +58,43 @@ function getPlacement(){
 
     if (mmr < 10){
         rank = 'Bronze';
-        icon.src = 'rank/bronze.webp';
+        document.getElementById("rankIcon").src="ranks/bronze.webp";
+        document.getElementById("rankVideo").src = "https://www.youtube.com/embed/bbTwjclFEgc";
     } else if (mmr < 20){
         rank = 'Silver';
-        icon.src = 'ranks/silver.webp';
+        document.getElementById("rankIcon").src = 'ranks/silver.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/Q1BjV6CMQig'
     } else if (mmr < 30){
         rank = 'Gold';
-        icon.src = 'ranks/gold.webp';
+        document.getElementById("rankIcon").src = 'ranks/gold.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/a4Txq_oWJG8'
     } else if (mmr < 40){
         rank = 'Platinum';
-        icon.src = 'ranks/platinum.webp';
+        document.getElementById("rankIcon").src = 'ranks/platinum.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/VUsMajmkQtM'
     } else if (mmr < 50){
         rank = 'Diamond';
-        icon.src = 'ranks/diamond.webp';
+        document.getElementById("rankIcon").src = 'ranks/diamond.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/xAyNo4ASS38'
     } else if (mmr < 60){
         rank = 'Master';
-        icon.src = 'ranks/master.webp';
+        document.getElementById("rankIcon").src = 'ranks/master.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/IT17RaiL3UY'
     }else if (mmr < 70){
         rank = 'Grand Master';
-        icon.src = 'ranks/grandmaster.webp';
+        document.getElementById("rankIcon").src = 'ranks/grandmaster.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/z6lNQVpTBgI'
     } else {
         rank = 'Challenger';
-        icon.src = 'ranks/challenger.webp';
+        document.getElementById("rankIcon").src = 'ranks/challenger.webp';
+        document.getElementById("rankVideo").src = 'https://www.youtube.com/embed/ZXCuk_YOmTY'
     }
     // document.body.appendChild(icon);
-    // document.querySelector('.ranks').appendChild(icon);
     // document.getElementById(icons).appendChild(icon);
-    // console.log(rank);
+    console.log(rank);
     return rank;
 }
+
 // var slider = document.getElementById("cs");
 // var output = document.getElementById("creepscore");
 // output.innerHTML = slider.value; // Display the default slider value
