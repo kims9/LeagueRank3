@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en" dir="ltn">
+ <head>
+     <meta charset="utf-8">
+  <title>League of Legends Rank Calculator</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="main.js"></script>
+  <style type="'text/css">
+      @font-face {
+  font-family: league;
+  src: url(league.otf);
+}
+  </style>
+</head>
+<body>
+    <section class="overlay">
+    <div id="content">
+    <h1>What is Your League Rank?</h1>
+    <p id="info">Answer the following questions and discover your rank.</p>
+    <form action="submission.html" method="PUT">
+        <label for="cs">What is your average CS per minute? (Creep score, how many minions you last hit per minute)</label>
+        <input type="range" id="cs" name="csm" min="0" max="10" oninput = "updateSliderValue('cs', 'creepscore')">
+            <p>Value: <span id="creepscore">5</span></p>
+        <label for="kp">What is your average kill participation score?</label>
+        <input type="range" id="kp" name="kpp" min="0" max="10" oninput = "updateSliderValue('kp', 'kps')">
+            <p>Value: <span id="kps">5</span></p>
+        <label for="ward">How many control wards do you usually buy per game?</label>
+        <input type="range" id="ward" name="wards" min="0" max="10" oninput = "updateSliderValue('ward', 'ws')">
+            <p>Value: <span id="ws">5</span></p>
+        <label for="gold">What is your average gold earned per minute?</label>
+        <input type="range" id="gold" name="goldearned" min="0" max="10" oninput = "updateSliderValue('gold', 'gpm')">
+            <p>Value: <span id="gpm">5</span></p>
+        <label for="akda">What is your average KDA?</label>
+        <input type="range" id="akda" name="kda" min="0" max="10" oninput = "updateSliderValue('akda', 'k')">
+            <p>Value: <span id="k">5</span></p>
+        <label for="obj">What is your average objective control ratio?</label>
+        <input type="range" id="obj" name="objectives" min="0" max="10" oninput = "updateSliderValue('obj', 'objc')">
+            <p>Value: <span id="objc">5</span></p>
+        <label for="tf">What is your average teamfight durability?</label>
+        <input type="range" id="tf" name="tfd" min="0" max="10" oninput = "updateSliderValue('tf', 'atfd')">
+            <p>Value: <span id="atfd">5</span></p>
+        <label for="c">How is your consistency?</label>
+        <input type="range" id="c" name="consistency" min="0" max="10" oninput = "updateSliderValue('c', 'con')">
+            <p>Value: <span id="con">5</span></p>
+
+    <!-- write a submit button here: -->
+        <button type="reset">Reset</button>
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <p id="result"></p>
+    
+</div>
+
+
+
+<script src="main.js"></script>
+<script>
+    readData();
+</script>
+
+
+</body>
+</html>
+
