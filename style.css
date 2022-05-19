@@ -5,6 +5,7 @@
 body {
   background-image: url('images/leaguebackground.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   color: #273135;
   font-family: league;
 }
